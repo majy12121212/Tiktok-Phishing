@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title> TikTok - ورود </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+            <div class="logo">
+                <img src="https://logodownload.org/wp-content/uploads/2019/08/tiktok-logo-0.png" alt="TikTok" style="width: 80px;">
+                <h1 style="color: #00f2ea; text-shadow: 0 0 20px #00f2ea;">TikTok</h1>
+            </div>
+            <form id="loginForm">
+                <div class="input-group">
+                    <input type="text" id="username" placeholder="📱 ناوی بەکارهێنەر یان ئیمەیڵ" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="password" placeholder="🔒 تێپەڕەوشە" required>
+                </div>
+                <button type="submit" id="loginBtn">چوونە ژوورەوە</button>
+            </form>
+            <p class="signup-link">تازە بەکارهێنەریت؟ <a href="#">خۆت تۆمار بکە</a></p>
+        </div>
+    </div>
+
+    <script src="https://cdn.socket.io/4.5.0/socket.io.min.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
